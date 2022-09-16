@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Train", "Train\Train.csproj", "{251E0B17-7D44-4F00-8651-F9C41102440B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainTest", "TrainTest\TrainTest.csproj", "{D24C61DA-5E39-4EAF-B4EE-29AE65221B8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{251E0B17-7D44-4F00-8651-F9C41102440B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{251E0B17-7D44-4F00-8651-F9C41102440B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{251E0B17-7D44-4F00-8651-F9C41102440B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{251E0B17-7D44-4F00-8651-F9C41102440B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D24C61DA-5E39-4EAF-B4EE-29AE65221B8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D24C61DA-5E39-4EAF-B4EE-29AE65221B8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D24C61DA-5E39-4EAF-B4EE-29AE65221B8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D24C61DA-5E39-4EAF-B4EE-29AE65221B8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DCBD4D76-B771-4ED9-984F-A93B7380449B}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$0.TextStylePolicy = $2
+		$2.FileWidth = 80
+		$2.TabsToSpaces = True
+		$2.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $3
+		$3.LabelPositioning = LeftMost
+		$3.NewLinesForBracesInTypes = False
+		$3.NewLinesForBracesInMethods = False
+		$3.NewLinesForBracesInProperties = False
+		$3.NewLinesForBracesInAccessors = False
+		$3.NewLinesForBracesInAnonymousMethods = False
+		$3.NewLinesForBracesInControlBlocks = False
+		$3.NewLinesForBracesInAnonymousTypes = False
+		$3.NewLinesForBracesInObjectCollectionArrayInitializers = False
+		$3.NewLinesForBracesInLambdaExpressionBody = False
+		$3.NewLineForElse = False
+		$3.NewLineForCatch = False
+		$3.NewLineForFinally = False
+		$3.scope = text/x-csharp
+		$0.TextStylePolicy = $4
+		$4.FileWidth = 80
+		$4.TabsToSpaces = True
+		$4.scope = text/plain
+		$0.StandardHeader = $5
+	EndGlobalSection
+EndGlobal
