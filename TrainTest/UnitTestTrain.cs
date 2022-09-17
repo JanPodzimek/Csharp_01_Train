@@ -90,4 +90,45 @@ public class UnitTestTrain {
         t1.reserveSeat(1, 12);
         Assert.AreEqual(w1.Sits[11].Reserved, true);
     }
+    [TestMethod]
+    public void Test_TrainCancelSeatReservation() {
+        Locomotive l1 = new Locomotive(new Person("Karel", "Novak"),
+            new Engine(engineType.diesel));
+        Person steward = new Person("Lenka", "Novotna");
+        BusinessWagon w1 = new BusinessWagon(steward, 50);
+        List<Wagon> wagons = new List<Wagon> { w1 };
+        Train t1 = new Train(l1, wagons);
+        Assert.AreEqual(t1.Wagons[0], w1);
+        Assert.AreEqual(w1.Sits[12 - 1].Reserved, false);
+        t1.reserveSeat(1, 12);
+        Assert.AreEqual(w1.Sits[12 - 1].Reserved, true);
+        t1.cancelSeatReservation(1, 12);
+        Assert.AreEqual(w1.Sits[12 - 1].Reserved, false);
+    }
+    [TestMethod]
+    public void Test_TrainReserveBed() {
+        Locomotive l1 = new Locomotive(new Person("Karel", "Novak"),
+            new Engine(engineType.diesel));
+        NightWagon w1 = new NightWagon(30, 20);
+        List<Wagon> wagons = new List<Wagon> { w1 };
+        Train t1 = new Train(l1, wagons);
+        Assert.AreEqual(t1.Wagons[0], w1);
+        Assert.AreEqual(w1.Beds[12 - 1].Reserved, false);
+        t1.reserveBed(1, 12);
+        Assert.AreEqual(w1.Beds[12 - 1].Reserved, true);
+    }
+    [TestMethod]
+    public void Test_TrainCancelBedReservation() {
+        Locomotive l1 = new Locomotive(new Person("Karel", "Novak"),
+            new Engine(engineType.diesel));
+        NightWagon w1 = new NightWagon(30, 20);
+        List<Wagon> wagons = new List<Wagon> { w1 };
+        Train t1 = new Train(l1, wagons);
+        Assert.AreEqual(t1.Wagons[0], w1);
+        Assert.AreEqual(w1.Beds[12 - 1].Reserved, false);
+        t1.reserveBed(1, 12);
+        Assert.AreEqual(w1.Beds[12 - 1].Reserved, true);
+        t1.cancelBedReservation(1, 12);
+        Assert.AreEqual(w1.Beds[12 - 1].Reserved, false);
+    }
 }

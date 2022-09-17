@@ -86,7 +86,7 @@ namespace Train {
             }
         }
         public void cancelSeatReservation(int numberOfWagon, int numberOfSeat) {
-            if (numberOfWagon < wagons.Count && numberOfWagon > 0) {
+            if (numberOfWagon <= wagons.Count && numberOfWagon > 0) {
                 if (this.Wagons[numberOfWagon - 1] is PersonalWagon pers) {
                     if (numberOfSeat <= pers.NumberOfChairs) {
                         if (pers.Sits[numberOfSeat - 1].Reserved) {
@@ -106,7 +106,7 @@ namespace Train {
             }
         }
         public void cancelBedReservation(int numberOfWagon, int numberOfBed) {
-            if (numberOfWagon < wagons.Count && numberOfWagon > 0) {
+            if (numberOfWagon <= wagons.Count && numberOfWagon > 0) {
                 if (this.Wagons[numberOfWagon - 1] is NightWagon night) {
                     if (numberOfBed <= night.NumberOfChairs) {
                         if (night.Beds[numberOfBed - 1].Reserved) {
