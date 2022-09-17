@@ -29,7 +29,7 @@ public class Program {
         train1.ConnectWagon(w4);
         train1.ConnectWagon(w5);
         train1.ConnectWagon(w6);
-        
+
         Console.WriteLine();
         train1.reserveSeat(2, 34);
         train1.reserveSeat(2, 34);
